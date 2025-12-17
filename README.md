@@ -19,6 +19,8 @@ Ejecución rápida - Todo el conjunto en 2-3 minutos
 
 Configuración específica para entorno Tomcat local
 
+
+
 Módulos de Prueba Implementados
 Autenticación
 Registro de Usuario: Validación de nuevo registro, campos obligatorios y correos duplicados
@@ -40,43 +42,3 @@ Historial de Pedidos: Consulta de compras anteriores y detalles específicos
 
 Formulario de Contacto: Envío de comentarios y validación de campos
 
-Requisitos del Sistema
-Software Requerido
-Node.js versión 16 o superior
-
-Google Chrome navegador instalado y actualizado
-
-Apache Tomcat para ejecutar la aplicación CircuByte
-
-Proyecto CircuByte desplegado en localhost:8087
-
-Configuración del Proyecto
-La aplicación debe estar accesible en http://localhost:8087/Proyecto_Final/
-
-Base de datos con datos de prueba para productos y usuarios
-
-Conexión a internet para descarga de dependencias
-
-Instalación y Configuración
-Instalar Node.js desde el sitio oficial
-
-Crear carpeta para el proyecto de pruebas
-
-Abrir terminal en la carpeta creada
-
-Ejecutar comando: npm init playwright@latest
-
-Flujo de Ejecución
-Iniciar la aplicación CircuByte en Tomcat
-
-Abrir terminal en la carpeta de pruebas
-
-Ejecutar comando deseado
-
-Esperar finalización de pruebas
-
-Revisar reportes generados
-
-Configurar URL en playwright.config.js
-
-Verificar conexión con la aplicación local
