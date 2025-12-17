@@ -1,6 +1,7 @@
 SISTEMA DE PRUEBAS AUTOMATIZADAS - CIRCUBYTE
 Descripción
-Sistema de pruebas automatizadas implementado con Playwright para el proyecto CircuByte. Cubre 8 casos de uso principales con 21 casos de prueba específicos, validando tanto flujos exitosos como situaciones de error.
+Sistema de pruebas automatizadas implementado con Playwright para el proyecto CircuByte.
+Cubre 8 casos de uso principales con 21 casos de prueba específicos, validando tanto flujos exitosos como situaciones de error.
 
 Características
 -21 pruebas automatizadas organizadas por funcionalidad
