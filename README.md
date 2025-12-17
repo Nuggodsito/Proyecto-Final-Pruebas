@@ -1,60 +1,78 @@
 SISTEMA DE PRUEBAS AUTOMATIZADAS - CIRCUBYTE
-Descripción
-Sistema de pruebas automatizadas implementado con Playwright para el proyecto CircuByte.
-Cubre 8 casos de uso principales con 21 casos de prueba específicos, validando tanto flujos exitosos como situaciones de error.
+Descripción General
+Sistema de pruebas automatizadas implementado con Playwright para el proyecto CircuByte. Este sistema valida automáticamente todas las funcionalidades principales de la aplicación web, proporcionando cobertura completa de pruebas tanto para flujos exitosos como para casos de error.
 
-Características
--21 pruebas automatizadas organizadas por funcionalidad
+Características Principales
+21 pruebas automatizadas organizadas por módulos funcionales
 
--Cobertura completa de casos exitosos y de error
+Cobertura completa de 8 casos de uso principales
 
--Evidencias automáticas (screenshots y videos)
+Evidencias automáticas incluyendo capturas de pantalla y videos
 
--Reportes HTML interactivos
+Reportes interactivos en formato HTML con filtros y búsqueda
 
--Ejecución rápida (2-3 minutos para todo el conjunto)
+Ejecución rápida - Todo el conjunto en 2-3 minutos
 
--Configuración para Tomcat local
+Configuración específica para entorno Tomcat local
 
-Estructura del Proyecto
-01-registro.spec.js - Pruebas de registro de usuarios
+Módulos de Prueba Implementados
+Autenticación
+Registro de Usuario: Validación de nuevo registro, campos obligatorios y correos duplicados
 
-02-login.spec.js - Pruebas de autenticación
+Inicio de Sesión: Pruebas de autenticación exitosa, credenciales incorrectas y validaciones
 
-03-carrito.spec.js - Pruebas del carrito de compras
+Gestión de Productos
+Carrito de Compras: Agregar productos, modificar cantidades y eliminar items
 
-04-checkout.spec.js - Pruebas de proceso de compra
+Filtrado de Productos: Navegación por categorías y manejo de categorías vacías
 
-05-historial.spec.js - Pruebas de historial de pedidos
+Proceso de Compra
+Checkout Completo: Flujo completo de compra con datos de envío y pago
 
-06-filtrado.spec.js - Pruebas de filtrado de productos
+Validaciones de Pago: Pruebas de tarjetas inválidas y datos incompletos
 
-07-contacto.spec.js - Pruebas de formulario de contacto
+Funcionalidades Adicionales
+Historial de Pedidos: Consulta de compras anteriores y detalles específicos
 
-Requisitos
-Node.js 16+
+Formulario de Contacto: Envío de comentarios y validación de campos
 
-Google Chrome instalado
+Requisitos del Sistema
+Software Requerido
+Node.js versión 16 o superior
 
-Proyecto CircuByte ejecutándose en Tomcat (localhost:8087)
+Google Chrome navegador instalado y actualizado
 
-Ejecución
-Asegurar que CircuByte esté corriendo
+Apache Tomcat para ejecutar la aplicación CircuByte
+
+Proyecto CircuByte desplegado en localhost:8087
+
+Configuración del Proyecto
+La aplicación debe estar accesible en http://localhost:8087/Proyecto_Final/
+
+Base de datos con datos de prueba para productos y usuarios
+
+Conexión a internet para descarga de dependencias
+
+Instalación y Configuración
+Instalar Node.js desde el sitio oficial
+
+Crear carpeta para el proyecto de pruebas
+
+Abrir terminal en la carpeta creada
+
+Ejecutar comando: npm init playwright@latest
+
+Flujo de Ejecución
+Iniciar la aplicación CircuByte en Tomcat
 
 Abrir terminal en la carpeta de pruebas
 
-Ejecutar: npx playwright test
+Ejecutar comando deseado
 
-Ver reporte: npx playwright show-report
+Esperar finalización de pruebas
 
-Resultados
-Todas las pruebas se ejecutan automáticamente
+Revisar reportes generados
 
-Reporte generado en formato HTML
+Configurar URL en playwright.config.js
 
-Evidencias guardadas para análisis
-
-Logs detallados en consola
-
-Tiempo total de ejecución: 2-3 minutos
-Cobertura: 8 casos de uso, 21 casos de prueba
+Verificar conexión con la aplicación local
